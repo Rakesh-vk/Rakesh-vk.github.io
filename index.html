@@ -1,54 +1,267 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f5f5f7">
-<meta name="description" content="Rakesh Kuratti — Java Backend Engineer">
-<title>Rakesh Kuratti</title><link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakesh Kuratti — Backend Engineer</title>
+<meta name="description" content="Rakesh Kuratti — Java backend engineer building Spring Boot microservices, REST APIs, and event-driven systems.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="nav"><div class="nav-inner">
-<a class="logo" href="#home">Rakesh Kuratti</a>
-<nav><a href="#work">Work</a><a href="#experience">Experience</a><a href="#photos">Photos</a><a href="#about">About</a></nav>
-<a class="resume" href="assets/resume.pdf" target="_blank">Resume ↗</a>
-</div></header>
 
-<main id="home">
-<section class="hero"><div class="hero-grid">
-<div class="hero-copy"><p class="kicker">Java Backend Engineer</p><h1>Build<br>for what's next.</h1>
-<p class="lead">I design and build scalable backend systems with a focus on performance, reliability, and real-world impact.</p>
-<p class="location">Bangalore, India · 5+ years of experience</p>
-<div class="actions"><a class="button" href="#work">View my work →</a><a class="link" href="assets/resume.pdf" target="_blank">Download resume ↗</a></div></div>
-<div class="hero-visual"><img src="assets/profile.jpg" alt="Rakesh Kuratti"><div class="hero-note">Engineering<br>with clarity<br>and intent.</div></div>
-</div></section>
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">Rakesh Kuratti</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#project">Project</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </div>
+</nav>
 
-<section class="statement"><div class="statement-grid"><h2>Software that<br>moves people.</h2><div>
-<p>With 5+ years of experience, I've worked on distributed systems, microservices, and large-scale platforms, contributing to products used by real businesses.</p>
-<a class="link" href="#about">More about me ↗</a></div></div></section>
+<header id="top" class="hero">
+  <svg class="hero-bg" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g class="hero-lines">
+      <line x1="120" y1="180" x2="520" y2="180"></line>
+      <line x1="520" y1="180" x2="520" y2="420"></line>
+      <line x1="520" y1="420" x2="900" y2="420"></line>
+      <line x1="900" y1="420" x2="900" y2="200"></line>
+      <line x1="900" y1="200" x2="1260" y2="200"></line>
+      <line x1="520" y1="420" x2="520" y2="640"></line>
+      <line x1="520" y1="640" x2="180" y2="720"></line>
+      <line x1="520" y1="640" x2="860" y2="700"></line>
+      <line x1="900" y1="420" x2="1180" y2="560"></line>
+      <line x1="1180" y1="560" x2="1180" y2="760"></line>
+    </g>
+    <g class="hero-nodes">
+      <circle cx="120" cy="180" r="4"></circle>
+      <circle cx="520" cy="180" r="4"></circle>
+      <circle cx="520" cy="420" r="5"></circle>
+      <circle cx="900" cy="420" r="4"></circle>
+      <circle cx="900" cy="200" r="4"></circle>
+      <circle cx="1260" cy="200" r="4"></circle>
+      <circle cx="520" cy="640" r="4"></circle>
+      <circle cx="180" cy="720" r="4"></circle>
+      <circle cx="860" cy="700" r="4"></circle>
+      <circle cx="1180" cy="560" r="4"></circle>
+      <circle cx="1180" cy="760" r="4"></circle>
+    </g>
+  </svg>
 
-<section id="experience" class="experience"><div class="experience-inner">
-<div class="section-title"><p class="kicker">Experience</p><h2>A journey of<br>building and<br>learning.</h2></div>
-<div class="jobs">
-<article><span>2023 — 2025</span><div><h3>Senior Software Engineer</h3><p>Infinite Computer Solutions · Nokia R&amp;D</p></div><p>Improved Optical Network Management API processing time by 40% using asynchronous Java concurrency. Extended backend services for new 800 GHz network elements and refactored response DTOs.</p></article>
-<article><span>2022 — 2023</span><div><h3>Software Engineer</h3><p>Profinch Solutions · UBCI Bank</p></div><p>Built and maintained banking microservices for loan and reporting workflows, with validation, error handling, multithreading, and persistence optimization.</p></article>
-<article><span>2020 — 2022</span><div><h3>Assistant System Engineer</h3><p>TCS India · Mylan</p></div><p>Developed REST APIs, reduced redundant database calls, applied Java Streams and multithreading, and supported testing, documentation, and deployment.</p></article>
-</div></div></section>
+  <div class="hero-content">
+    <h1>Backend systems that hold up<br>under load.</h1>
+    <p class="hero-sub">Rakesh Kuratti is a Java backend engineer in Bangalore who builds Spring Boot microservices and REST APIs for platforms that can't afford to go down — from Nokia's optical network stack to distributed order-processing systems.</p>
+    <div class="hero-actions">
+      <a href="#project" class="btn btn-primary">See the work</a>
+      <a href="mailto:rakesh.vkuratti@gmail.com" class="btn btn-ghost">Email me</a>
+    </div>
+  </div>
+</header>
 
-<section id="work" class="project"><div class="project-inner">
-<div class="project-heading"><div><p class="kicker">Featured project</p><h2>E-commerce<br>microservices<br>platform.</h2></div>
-<div class="project-description"><p>A production-style e-commerce backend built around independent services, event-driven communication, resilience, authentication, and service-owned data.</p><a class="link" href="https://github.com/Rakesh-vk/e-commerce-with-microservices-architecture" target="_blank">View on GitHub ↗</a></div></div>
-<div class="architecture"><img src="assets/ecommerce-architecture.png" alt="E-commerce microservices architecture"></div>
-<div class="specs"><div><b>Java 21</b><small>Language baseline</small></div><div><b>Spring Boot</b><small>Backend platform</small></div><div><b>Kafka</b><small>Event-driven messaging</small></div><div><b>PostgreSQL</b><small>Service-owned data</small></div></div>
-</div></section>
+<section class="stats">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">years building production Java backends</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">40%</div>
+      <div class="stat-label">faster backend processing after a concurrency rework</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">7</div>
+      <div class="stat-label">microservices designed and shipped end to end</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">3</div>
+      <div class="stat-label">enterprise platforms: Nokia, UBCI Bank, Mylan</div>
+    </div>
+  </div>
+</section>
 
-<section class="technology"><div class="technology-inner"><p class="kicker">Technology</p><h2>The tools behind<br>the work.</h2>
-<div class="tech-grid"><div><h3>Backend</h3><p>Java · Spring Boot · REST APIs · JPA · Hibernate</p></div><div><h3>Distributed systems</h3><p>Microservices · Eureka · API Gateway · Event-driven architecture</p></div><div><h3>Messaging</h3><p>Kafka · Producers · Consumers · Idempotent processing</p></div><div><h3>Security</h3><p>Spring Security · JWT · Authentication · Authorization</p></div><div><h3>Data</h3><p>PostgreSQL · MySQL · SQL · Redis · JDBC</p></div><div><h3>Reliability</h3><p>Resilience4j · Timeouts · Circuit breakers · Fallbacks</p></div></div></div></section>
+<section id="work" class="section section-light">
+  <div class="section-inner">
+    <h2>Experience</h2>
+    <p class="section-lede">Five years across telecom, banking, and pharma — always on the backend, always on Java.</p>
 
-<section id="photos" class="photos"><div class="photos-inner"><div class="photos-heading"><div><p class="kicker">Photography</p><h2>Moments.<br>As I see them.</h2></div><p>A small collection of places, people, and perspectives that inspire me. Presented as large visual moments rather than a conventional gallery.</p></div>
-<div class="photo-grid"><figure class="photo-main"><img src="assets/profile.jpg" alt="Portrait"></figure><figure><img src="assets/ecommerce-architecture.png" alt="Architecture visual"></figure><figure><img src="assets/portfolio-visual.png" alt="Portfolio visual"></figure></div></div></section>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Senior Software Engineer</h3>
+            <span class="timeline-date">Dec 2023 – Sept 2025</span>
+          </div>
+          <div class="timeline-org">Infinite Computer Solutions · Client: Nokia R&D · Bangalore</div>
+          <ul>
+            <li>Extended REST APIs to support newly introduced 800 GHz network elements in Nokia's optical network management platform, so the platform could manage next-generation optical hardware.</li>
+            <li>Cut backend processing time by 40% by running independent downstream service calls concurrently with <code>CompletableFuture</code> and <code>ExecutorService</code>.</li>
+            <li>Refactored REST response models to remove duplicate data, producing leaner payloads and clearer contracts for API consumers.</li>
+          </ul>
+        </div>
+      </div>
 
-<section id="about" class="about"><div><p class="kicker">About</p><h2>Engineering<br>with purpose.</h2></div><div class="about-copy"><p>I enjoy turning complex backend requirements into systems with clear responsibilities, predictable failure behaviour, and maintainable APIs.</p><p>My work spans high-throughput APIs, banking systems, distributed services, asynchronous processing, security, and data-intensive applications.</p><div class="education"><b>Bachelor of Engineering — Computer Science</b><span>KLE Technological University · 2017 — 2020</span></div></div></section>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Software Engineer</h3>
+            <span class="timeline-date">Dec 2022 – Oct 2023</span>
+          </div>
+          <div class="timeline-org">Profinch Solutions Pvt. Ltd. · Client: UBCI Bank, Tunisia · Bangalore</div>
+          <ul>
+            <li>Built and extended banking microservices for loan management and financial reporting using Java, Spring Boot, Hibernate, and SQL.</li>
+            <li>Added request validation and global exception handling with <code>@ControllerAdvice</code>, making API errors consistent and predictable.</li>
+            <li>Parallelized batch record processing with Java multithreading to raise backend throughput.</li>
+          </ul>
+        </div>
+      </div>
 
-<section id="contact" class="contact"><p class="kicker">Let's connect</p><h2>Let's build something<br>meaningful.</h2><div><a href="mailto:rakesh.vkuratti@gmail.com">✉ rakesh.vkuratti@gmail.com</a><a href="https://www.linkedin.com/in/rakesh-kuratti/" target="_blank">in LinkedIn</a><a href="https://github.com/Rakesh-vk" target="_blank">◉ GitHub</a></div></section>
-</main><footer><span>© 2026 Rakesh Kuratti</span><span>Build · Explore · Create</span></footer>
-<script src="script.js"></script></body></html>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Assistant System Engineer</h3>
+            <span class="timeline-date">Nov 2020 – Dec 2022</span>
+          </div>
+          <div class="timeline-org">TCS India Pvt. Ltd. · Client: Mylan · Bangalore</div>
+          <ul>
+            <li>Owned REST API delivery end to end: implementation, testing, documentation, and deployment support.</li>
+            <li>Removed redundant database calls, reducing load and speeding up request processing.</li>
+            <li>Used Java Streams for filtering, transformation, and aggregation across large-scale record processing.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project" class="section section-dark">
+  <div class="section-inner">
+    <h2>Featured project</h2>
+    <p class="section-lede">A self-directed e-commerce platform built to put microservices patterns into practice — service boundaries, event-driven communication, and independent deployability.</p>
+
+    <div class="project-card">
+      <div class="project-head">
+        <h3>E-Commerce Microservices Platform</h3>
+        <a href="https://github.com/Rakesh-vk/e-commerce-with-microservices-architecture" target="_blank" rel="noopener" class="project-link">View on GitHub ↗</a>
+      </div>
+      <p class="project-desc">Seven independently deployable services — user, product, order, checkout, payment, notification, and a Eureka discovery server — fronted by a Spring Cloud Gateway. Order and payment talk over REST; order and notification talk over Kafka, so an email confirmation never blocks checkout.</p>
+
+      <div class="project-diagram">
+        <img src="assets/diagram-ecommerce.svg" alt="Architecture diagram: client through API Gateway to User, Product, Order and Checkout services, Order to Payment over REST, Order to Kafka to Notification Service asynchronously, each service with its own database" loading="lazy">
+      </div>
+      <p class="diagram-hint">Scroll sideways to see the full diagram →</p>
+
+      <div class="project-details">
+        <div class="project-col">
+          <h4>Patterns in practice</h4>
+          <ul class="plain-list">
+            <li>Database-per-service</li>
+            <li>API Gateway with dynamic service discovery</li>
+            <li>JWT-based stateless authentication</li>
+            <li>Synchronous REST + asynchronous Kafka events</li>
+            <li>DTO-based contracts, layered architecture</li>
+            <li>Global exception handling, automated tests</li>
+          </ul>
+        </div>
+        <div class="project-col">
+          <h4>Built with</h4>
+          <div class="chip-list">
+            <span class="chip">Java</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">Spring Security</span>
+            <span class="chip">Spring Data JPA</span>
+            <span class="chip">Spring Cloud Gateway</span>
+            <span class="chip">Eureka</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Apache Kafka</span>
+            <span class="chip">JWT</span>
+            <span class="chip">Docker Compose</span>
+            <span class="chip">JUnit &amp; Mockito</span>
+            <span class="chip">OpenAPI / Swagger</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section section-light">
+  <div class="section-inner">
+    <h2>Skills</h2>
+    <p class="section-lede">The everyday toolkit behind the work above.</p>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <p>Java, SQL</p>
+      </div>
+      <div class="skill-group">
+        <h4>Frameworks</h4>
+        <p>Spring Boot, Spring Security, Spring Cloud Gateway, Spring Data JPA</p>
+      </div>
+      <div class="skill-group">
+        <h4>Backend</h4>
+        <p>Microservices, REST APIs, JWT authentication, API design</p>
+      </div>
+      <div class="skill-group">
+        <h4>Messaging</h4>
+        <p>Apache Kafka, event-driven communication</p>
+      </div>
+      <div class="skill-group">
+        <h4>Concurrency</h4>
+        <p>Multithreading, ExecutorService, CompletableFuture</p>
+      </div>
+      <div class="skill-group">
+        <h4>Persistence</h4>
+        <p>Hibernate, JPA, JDBC, MySQL, PostgreSQL</p>
+      </div>
+      <div class="skill-group">
+        <h4>Tools</h4>
+        <p>Git, Docker, Maven, Jira, Confluence</p>
+      </div>
+      <div class="skill-group">
+        <h4>Foundations</h4>
+        <p>OOP, data structures &amp; algorithms, system design, SOLID principles, design patterns</p>
+      </div>
+    </div>
+
+    <div class="education">
+      <h4>Education</h4>
+      <div class="education-row">
+        <span>Bachelor of Engineering, Computer Science — KLE Technological University, Hubli</span>
+        <span class="timeline-date">Aug 2017 – May 2020</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section section-dark contact-section">
+  <div class="section-inner contact-inner">
+    <img src="assets/rakesh.jpg" alt="Portrait of Rakesh Kuratti" class="contact-photo">
+    <h2>Let's talk backend.</h2>
+    <p class="section-lede">Open to Java backend and microservices roles. Based in Bangalore, available to start immediately.</p>
+    <div class="contact-links">
+      <a href="mailto:rakesh.vkuratti@gmail.com">rakesh.vkuratti@gmail.com</a>
+      <a href="tel:+918088313932">+91 80883 13932</a>
+      <a href="https://github.com/Rakesh-vk" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/rakesh-kuratti/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <span>© <span id="year"></span> Rakesh Kuratti</span>
+    <span>Bangalore, Karnataka, India</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
